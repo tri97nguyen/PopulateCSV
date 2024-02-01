@@ -1,0 +1,41 @@
+cabal-version:      2.4
+name:               CSVComparer
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Tri Nguyen
+maintainer:         34323747+tri97nguyen@users.noreply.github.com
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable CSVComparer
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:    SeedPosition, Foldable, Positions
+
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.16.4.0, 
+                      random ^>=1.2.1.1,
+                      cassava ^>=0.5.3.0,
+                      bytestring ^>=0.11.4.0,
+                      vector, utf8-string, async, timers, suspend, containers
+                      
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
